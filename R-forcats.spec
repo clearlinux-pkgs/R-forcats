@@ -4,22 +4,23 @@
 #
 Name     : R-forcats
 Version  : 0.3.0
-Release  : 11
+Release  : 12
 URL      : https://cran.r-project.org/src/contrib/forcats_0.3.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/forcats_0.3.0.tar.gz
-Summary  : Tools for Working with Categorical Variables (Factors)
+Summary  : Tools for working with categorical variables.
 Group    : Development/Tools
 License  : GPL-3.0
-Requires: R-rlang
 Requires: R-tibble
-BuildRequires : R-rlang
 BuildRequires : R-tibble
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
-specified levels to front, ordering by first appearance, reversing, and
-    randomly shuffling), and tools for modifying factor levels (including
-    collapsing rare levels into other, 'anonymising', and manually 'recoding').
+# forcats <img src="man/figures/logo.png" align="right" />
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/forcats)](https://cran.r-project.org/package=forcats)
+[![Travis-CI Build
+Status](https://travis-ci.org/tidyverse/forcats.svg?branch=master)](https://travis-ci.org/tidyverse/forcats)
+[![Coverage
+Status](https://img.shields.io/codecov/c/github/tidyverse/forcats/master.svg)](https://codecov.io/github/tidyverse/forcats?branch=master)
 
 %prep
 %setup -q -c -n forcats
@@ -29,11 +30,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1521248978
+export SOURCE_DATE_EPOCH=1550464087
 
 %install
+export SOURCE_DATE_EPOCH=1550464087
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1521248978
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
