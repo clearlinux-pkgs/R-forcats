@@ -4,13 +4,12 @@
 #
 Name     : R-forcats
 Version  : 0.3.0
-Release  : 12
+Release  : 13
 URL      : https://cran.r-project.org/src/contrib/forcats_0.3.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/forcats_0.3.0.tar.gz
 Summary  : Tools for working with categorical variables.
 Group    : Development/Tools
 License  : GPL-3.0
-Requires: R-tibble
 BuildRequires : R-tibble
 BuildRequires : buildreq-R
 
@@ -30,10 +29,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550464087
+export SOURCE_DATE_EPOCH=1550464193
 
 %install
-export SOURCE_DATE_EPOCH=1550464087
+export SOURCE_DATE_EPOCH=1550464193
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
