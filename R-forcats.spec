@@ -4,14 +4,13 @@
 #
 Name     : R-forcats
 Version  : 0.4.0
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/forcats_0.4.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/forcats_0.4.0.tar.gz
-Summary  : Tools for Working with Categorical Variables (Factors)
+Summary  : Tools for working with categorical variables.
 Group    : Development/Tools
 License  : GPL-3.0
 Requires: R-ellipsis
-Requires: R-ggplot2
 Requires: R-magrittr
 Requires: R-rlang
 Requires: R-tibble
@@ -21,6 +20,7 @@ BuildRequires : R-magrittr
 BuildRequires : R-rlang
 BuildRequires : R-tibble
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 Helpers for reordering factor levels (including moving specified levels to
@@ -36,10 +36,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1564706866
+export SOURCE_DATE_EPOCH=1571832052
 
 %install
-export SOURCE_DATE_EPOCH=1564706866
+export SOURCE_DATE_EPOCH=1571832052
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
