@@ -4,19 +4,19 @@
 #
 Name     : R-forcats
 Version  : 0.5.0
-Release  : 30
+Release  : 31
 URL      : https://cran.r-project.org/src/contrib/forcats_0.5.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/forcats_0.5.0.tar.gz
-Summary  : Tools for working with categorical variables.
+Summary  : Tools for Working with Categorical Variables (Factors)
 Group    : Development/Tools
 License  : GPL-3.0
+Requires: R-dplyr
 Requires: R-ellipsis
-Requires: R-ggplot2
 Requires: R-magrittr
 Requires: R-rlang
 Requires: R-tibble
+BuildRequires : R-dplyr
 BuildRequires : R-ellipsis
-BuildRequires : R-ggplot2
 BuildRequires : R-magrittr
 BuildRequires : R-rlang
 BuildRequires : R-tibble
@@ -30,21 +30,22 @@ tools for modifying factor levels (including collapsing rare levels into other,
 
 %prep
 %setup -q -c -n forcats
+cd %{_builddir}/forcats
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583165095
+export SOURCE_DATE_EPOCH=1589761553
 
 %install
-export SOURCE_DATE_EPOCH=1583165095
+export SOURCE_DATE_EPOCH=1589761553
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
