@@ -4,7 +4,7 @@
 #
 Name     : R-forcats
 Version  : 0.5.0
-Release  : 31
+Release  : 32
 URL      : https://cran.r-project.org/src/contrib/forcats_0.5.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/forcats_0.5.0.tar.gz
 Summary  : Tools for Working with Categorical Variables (Factors)
