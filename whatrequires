@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 R-GGally
 R-broom.mixed
-R-ggridges
 R-haven
 R-tidyverse
