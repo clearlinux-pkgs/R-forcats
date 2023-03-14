@@ -4,7 +4,7 @@
 #
 Name     : R-forcats
 Version  : 1.0.0
-Release  : 52
+Release  : 53
 URL      : https://cran.r-project.org/src/contrib/forcats_1.0.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/forcats_1.0.0.tar.gz
 Summary  : Tools for Working with Categorical Variables (Factors)
@@ -23,9 +23,6 @@ BuildRequires : R-magrittr
 BuildRequires : R-rlang
 BuildRequires : R-tibble
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 Helpers for reordering factor levels (including moving specified levels to
@@ -42,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1675098063
+export SOURCE_DATE_EPOCH=1678819807
 
 %install
-export SOURCE_DATE_EPOCH=1675098063
+export SOURCE_DATE_EPOCH=1678819807
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
